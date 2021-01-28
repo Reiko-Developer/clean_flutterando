@@ -1,3 +1,4 @@
+import 'package:clean_flutterando/modules/search/presenter/search/search_bloc.dart';
 import 'package:clean_flutterando/modules/search/presenter/search/search_page.dart';
 import 'package:flutter/material.dart';
 
@@ -20,6 +21,7 @@ class AppModule extends MainModule {
         Bind((i) => SearchByTextImpl(i())),
         Bind((i) => SearchRepositoryImpl(i())),
         Bind((i) => GithubDatasource(i())),
+        Bind((i) => SearchBloc(i())),
       ];
 
   ///Rotas nomeadas

@@ -1,9 +1,9 @@
 ///Não inclui toJson/fromJsons
 
 class ResultSearch {
-  final String title;
-  final String content;
+  final String login;
+  final String id;
   final String img;
 
-  ResultSearch({this.title, this.content, this.img});
+  ResultSearch({this.login, this.id, this.img});
 }

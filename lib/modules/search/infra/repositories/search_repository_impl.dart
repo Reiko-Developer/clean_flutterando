@@ -14,7 +14,7 @@ class SearchRepositoryImpl implements SearchRepository {
       String searchText) async {
     try {
       final result = await dataSource.getSearch(searchText);
-
+      print(result);
       return Right(result);
     } on DataSourceError catch (e) {
       return Left(e);
