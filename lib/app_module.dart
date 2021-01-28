@@ -1,3 +1,4 @@
+import 'package:clean_flutterando/modules/search/presenter/search/search_page.dart';
 import 'package:flutter/material.dart';
 
 import 'package:dio/dio.dart';
@@ -23,7 +24,9 @@ class AppModule extends MainModule {
 
   ///Rotas nomeadas
   @override
-  List<ModularRouter> get routers => throw UnimplementedError();
+  List<ModularRouter> get routers => [
+        ModularRouter('/', child: (_, __) => SearchPage()),
+      ];
 
   @override
   Widget get bootstrap => AppWidget();
