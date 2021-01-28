@@ -17,8 +17,8 @@ main() {
 
   final datasource = GithubDatasource(dio);
   test('Deve retornar uma lista de ResultSearchModel', () async {
-    when(dio.get(any)).thenAnswer((_) async =>
-        Response(data: jsonDecode(githubResponse), statusCode: 200));
+    when(dio.get(any)).thenAnswer(
+        (_) async => Response(data: jsonDecode(githubResult), statusCode: 200));
 
     final future = datasource.getSearch('searchText');
 

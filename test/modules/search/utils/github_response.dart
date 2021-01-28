@@ -1,4 +1,4 @@
-const githubResponse = """{
+const githubResult = """{
   "total_count": 449,
   "incomplete_results": false,
   "items": [
