@@ -1,5 +1,3 @@
-///Não inclui toJson/fromJsons
-
 class ResultSearch {
   final String login;
   final String id;
